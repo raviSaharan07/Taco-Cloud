@@ -1,0 +1,9 @@
+spring:
+  #Application Config
+  application:
+    name: taco-cloud
+
+  #H2 Database Config
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
