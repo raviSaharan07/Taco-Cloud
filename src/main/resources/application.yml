@@ -3,7 +3,11 @@ spring:
   application:
     name: taco-cloud
 
-  #H2 Database Config
-  datasource:
-    generate-unique-name: false
-    name: tacocloud
+  #Cassandra Config
+  data:
+    cassandra:
+      keyspace-name: taco_cloud
+      schema-action: recreate
+      local-datacenter: datacenter1
+      username: tacocloud
+      password: admin
